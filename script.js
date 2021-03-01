@@ -56,18 +56,25 @@ function generatePassword() {
       return;
     }
 
+    else {
+      // contain character type upperCase? BOOLEAN
+      confirm("Will your password contain upper case letters?");
+      // contain character type lowerCase? BOOLEAN
+      confirm("Will your password contain lower case letters?");
+      // contain character type number? BOOLEAN
+      confirm("Will your password contain numbers?");
+      // contain character type specialCharacter? BOOLEAN
+      confirm("Will your password contain special characters?");
+    }
+
+// if no character type chosen, error message
+
+   
 }
 
 
 
 
-
-// contain character type upperCase? BOOLEAN
-// contain character type lowerCase? BOOLEAN
-// contain character type number? BOOLEAN
-// contain character type specialCharacter? BOOLEAN
-
-// if no character type chosen, error message
 
 
 
