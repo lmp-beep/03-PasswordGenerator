@@ -52,29 +52,28 @@ function generatePassword() {
 
     // if input is >128, error message
     if (length > 128) {
-      prompt("Password must contain less than 129 characters");
+      prompt("Password must contain less than 129 characters.");
       return;
     }
 
-    else {
       // contain character type upperCase? BOOLEAN
-      confirm("Will your password contain upper case letters?");
+      var confirmUpperCase = confirm("Will your password contain upper case letters?");
       // contain character type lowerCase? BOOLEAN
-      confirm("Will your password contain lower case letters?");
+      var confirmLowerCase = confirm("Will your password contain lower case letters?");
       // contain character type number? BOOLEAN
-      confirm("Will your password contain numbers?");
+      var confirmNumber = confirm("Will your password contain numbers?");
       // contain character type specialCharacter? BOOLEAN
-      confirm("Will your password contain special characters?");
-    }
+      var confirmSpecialCharacter = confirm("Will your password contain special characters?");
+    
 
 // if no character type chosen, error message
+    if (!confirmUpperCase && !confirmLowerCase && !confirmNumber && !confirmSpecialCharacter) {
+      prompt("Password must contain some character type.");
+      return;
+    }
 
    
 }
-
-
-
-
 
 
 
