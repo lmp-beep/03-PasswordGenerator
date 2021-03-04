@@ -23,11 +23,12 @@ var specialCharacter = [" ", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "
 
 // User prompt for password length 8-128, options for character types
 function generatePassword() {
-  var length = parseInt(
-    prompt("How many characters in your password? Choose between 8-128.")
-    );
+  var length = prompt("How many characters in your password? Choose between 8-128.");
 
-    
+  if (isNaN(length)) {
+    alert("Length must be entered as a number.")
+    return;
+  }
 
     // if input is <8 and >128, error message
     if (length < 8 || length > 128) {
@@ -35,10 +36,7 @@ function generatePassword() {
       return;
     }
 
-    // else if (length = upperCase && lowerCase && specialCharacter) {
-    //   alert("Length must be entered as a number.")
-    //   return;
-    // }
+    
 
     
 
