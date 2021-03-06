@@ -6,8 +6,9 @@ This homework was incredibly difficult. I pulled from online research more than 
 
 The password generator works for lengths between 8 and 128 characters. It can include uppercase letters, lowercase letters, numbers, and special characters, depending on the user's inputs.
 
-![](2021-03-04-12-27-37.png)
-![](2021-03-04-12-28-23.png)
+![image](https://user-images.githubusercontent.com/77073582/110209810-8053d200-7e5c-11eb-8b90-2038a21b253f.png)
+![image](https://user-images.githubusercontent.com/77073582/110209820-906bb180-7e5c-11eb-837c-521002be151d.png)
+
 
 
 
